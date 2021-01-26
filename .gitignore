@@ -1,0 +1,7 @@
+
+*.json
+node_modules/.bin/acorn
+.env
+.eslintcache
+
+node_modules/
