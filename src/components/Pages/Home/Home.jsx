@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css';
+import { Link } from 'react-router-dom'
 
 const Home = () => {
 
@@ -15,16 +16,19 @@ const Home = () => {
     <hr></hr>
     <br></br>
     <center>
-        <div class="row">
-            <div class="column">
-                <p> Column, should add description and link to search </p>
-                </div>
-            <div class="column">
-                <p> Column, should add description and link to search </p>
-                </div>
-            <div class="column">
-                <p> Column, should add description and link to search </p>
-                </div>
+        <div className="row">
+            <div className="column">
+                <Link to='/Electronics/Electronics'>Electronics</Link>
+            </div>
+            <div className="column">
+                <Link to='/Pharma/Pharma'>Pharmaceuticals</Link>
+            </div>
+            <div className="column">
+                <Link to='/Textiles/Textiles'>Textiles</Link>
+            </div>
+            <div className="column">
+                <Link to='/Compost/Compost'>Compost</Link>
+            </div>
         </div>
     </center>
     <hr></hr>
