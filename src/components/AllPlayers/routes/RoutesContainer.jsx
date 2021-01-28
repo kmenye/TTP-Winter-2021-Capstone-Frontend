@@ -21,6 +21,8 @@ class RoutesContainer extends Component {
         <Route exact path = "/electronics">   <Navbarr />  <Electronics /> </Route>
         <Route exact path = "/textiles">  <Navbarr />   <Textiles /> </Route>
         <Route exact path = "/pharma">   <Navbarr />  <Pharma /> </Route>
+        <Route exact path = "/userlogin">   <Navbarr />   </Route>
+        <Route exact path = "/userpage">   <Navbarr />  </Route>
 
       </Switch>
     );
