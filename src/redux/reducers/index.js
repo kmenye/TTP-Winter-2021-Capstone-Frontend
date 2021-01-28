@@ -7,6 +7,8 @@ import {
   GOT_ALL_CAMPUSES,
   GOT_CAMPUS_BY_ID,
   CREATED_CAMPUS,
+  GOT_ALL_USERS,
+  GOT_ALL_ITEMS,
 } from "./actionTypes";
 
 // better way to import all these?
@@ -16,6 +18,8 @@ const initialState = {
   student: {},
   campuses: [],
   campus: {},
+  users: [],
+  items: [],
 };
 
 const gotAllStudents = (data) => {
@@ -32,6 +36,46 @@ export const getAllStudents = () => {
       const response = await axios.get("http://localhost:8080/api/students/");
       console.log("getAllStudents axios response:", response);
       dispatch(gotAllStudents(response.data));
+    } catch (error) {
+      console.error(error);
+    }
+  };
+};
+
+const gotAllUsers = (data) => {
+  return {
+    type: GOT_ALL_USERS,
+    data,
+  };
+};
+
+export const getAllUsers = () => {
+  return async (dispatch) => {
+    try {
+      // http:// resolves CORS error, thank you stack overflow
+      const response = await axios.get("http://localhost:8080/api/users/");
+      console.log("getAllUsers axios response:", response);
+      dispatch(gotAllUsers(response.data));
+    } catch (error) {
+      console.error(error);
+    }
+  };
+};
+
+const gotAllItems = (data) => {
+  return {
+    type: GOT_ALL_ITEMS,
+    data,
+  };
+};
+
+export const getAllItems = () => {
+  return async (dispatch) => {
+    try {
+      // http:// resolves CORS error, thank you stack overflow
+      const response = await axios.get("http://localhost:8080/api/items/");
+      console.log("getAllItems axios response:", response);
+      dispatch(gotAllItems(response.data));
     } catch (error) {
       console.error(error);
     }
@@ -66,6 +110,16 @@ const rootReducer = (state = initialState, action) => {
       return {
         ...state,
         students: action.data,
+      };
+    case GOT_ALL_USERS:
+      return {
+        ...state,
+        users: action.data,
+      };
+    case GOT_ALL_ITEMS:
+      return {
+        ...state,
+        items: action.data,
       };
     default:
       return state;
