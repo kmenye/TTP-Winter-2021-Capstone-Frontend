@@ -5,3 +5,4 @@ node_modules/.bin/acorn
 .eslintcache
 
 node_modules/
+package-lock.json
