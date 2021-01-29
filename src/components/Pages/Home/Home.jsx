@@ -4,7 +4,7 @@ import './Home.css';
 const Home = () => {
 
     return <div>
-        <center> <img src = " https://api.time.com/wp-content/uploads/2019/07/plastic-garbage.jpg" width="900" height="500"></img></center>
+        <center> <img className="homeBanner" src = " https://api.time.com/wp-content/uploads/2019/07/plastic-garbage.jpg" width="900" height="500"></img></center>
     
     
     <br></br>

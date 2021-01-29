@@ -11,6 +11,7 @@ class ZipSearch extends Component {
       code: "",
       match: false,
       type: "electronics",
+
     };
 
     // changed initial type to electronics as it is the first item on the list
@@ -28,6 +29,10 @@ class ZipSearch extends Component {
     this.getType = this.getType.bind(this);
     this.doStuff = this.doStuff.bind(this);
   }
+
+  //GOOGLE MAPS API
+  //AIzaSyBUeZg5hbGAsMMEX-3UCAjZP91oooJoGkI
+    
 
   // maybe do not need to bind do stuff?
 
@@ -108,6 +113,7 @@ class ZipSearch extends Component {
         });
     }
   }
+  
 
   getType(event) {
     event.preventDefault();
@@ -171,7 +177,10 @@ class ZipSearch extends Component {
                   item.drop_off_site_name
                 }
                 zipcode={item.zipcode}
+                latitude={item.latitude}
+                longitude={item.longitude}
               />
+
             ))}
           </div>
         ) : (
