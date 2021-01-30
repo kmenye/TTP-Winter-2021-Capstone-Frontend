@@ -6,3 +6,5 @@ node_modules/.bin/acorn
 
 node_modules/
 package-lock.json
+package-lock.json
+package.json
