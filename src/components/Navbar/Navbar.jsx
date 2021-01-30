@@ -17,6 +17,9 @@ const Navbarr = () => {
           <li class="nav-item">
             <Link to="/electronics">Electronics</Link>
           </li>
+          <li class="nav-item">
+            <Link to="/compost">Compost</Link>
+          </li>
           <li class="nav-item"> 
             <Link to="/textiles">Clothing</Link>          
           </li>

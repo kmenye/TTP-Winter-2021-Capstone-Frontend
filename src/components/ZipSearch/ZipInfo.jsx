@@ -1,13 +1,14 @@
 // import { fromCodePoint } from "core-js/fn/string";
 import React, { Component } from "react";
 import {Map, GoogleApiWrapper, InfoWindow, Marker} from 'google-maps-react';
-
+import './ZipInfo.css';
 
 
 const mapStyles = {
-  width: '10%',
-  height: '10%'
+  width: '100%',
+  height: '500%'
 };
+
 
 class ZipInfo extends Component {
   state = {
@@ -37,17 +38,18 @@ class ZipInfo extends Component {
     return (
       <div className="Info">
         <header className="head">
-          <h1>
+          <h5>
             {this.props.dropoff_sitename}, {this.props.zipcode}
-          </h1>
+          </h5>
         </header>
-        <ul>
-          <li>
-            {" "}
-            <h2>Address: {this.props.address}</h2>{" "}
+        
+        <div className="container">
+            {" "}<h5>Address: {this.props.address}</h5>{" "}
+            <hr></hr>
+            
             <Map
               google={this.props.google}
-              zoom={15}
+              zoom={17}
               style={mapStyles}
               initialCenter={
                 {
@@ -60,6 +62,7 @@ class ZipInfo extends Component {
                 onClick={this.onMarkerClick}
                 name={this.props.dropoff_sitename}
               />
+              
               <InfoWindow
                 marker={this.state.activeMarker}
                 visible={this.state.showingInfoWindow}
@@ -67,15 +70,12 @@ class ZipInfo extends Component {
               >
                 <div>
                   <h4>{this.state.selectedPlace.name}</h4>
+                  
                 </div>
               </InfoWindow>
             </Map>
-
-
-              <br></br>
-              <br></br>
-          </li>
-        </ul>
+           
+            </div>
       </div>
     );
   }

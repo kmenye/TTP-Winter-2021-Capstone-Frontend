@@ -6,6 +6,7 @@ import Navbarr from "../../Navbar/Navbar.jsx";
 import Electronics from "../../Pages/Electronics/Electronics.jsx";
 import Textiles from "../../Pages/Textiles/Textiles.jsx";
 import Pharma from "../../Pages/Pharma/Pharma.jsx";
+import Compost from "../../Pages/Compost/Compost.jsx";
 
 class RoutesContainer extends Component {
   render() {
@@ -17,6 +18,7 @@ class RoutesContainer extends Component {
         </Route>
 
         <Route exact path = "/electronics">   <Navbarr />  <Electronics /> </Route>
+        <Route exact path = "/compost">   <Navbarr />  <Compost /> </Route>
         <Route exact path = "/textiles">  <Navbarr />   <Textiles /> </Route>
         <Route exact path = "/pharma">   <Navbarr />  <Pharma /> </Route>
         <Route exact path = "/userlogin">   <Navbarr />   </Route>
