@@ -156,8 +156,6 @@ class ZipSearch extends Component {
           <option value="textiles"> Textiles </option>
         </select>
         
-        <p>Zip Code: </p>
-        
         <input
           name="code"
           type="text"
@@ -165,7 +163,7 @@ class ZipSearch extends Component {
             this.setZip(e);
           }}
           value={this.state.code}
-          placeholder="Try 10016"
+          placeholder="Please enter a zip code"
         />
         <button onClick={this.fetchZipCode}>Search</button>
 

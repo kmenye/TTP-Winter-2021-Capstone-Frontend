@@ -38,6 +38,7 @@ class ZipInfo extends Component {
     return (
       <div className="Info">
         <header className="head">
+          <hr></hr>
           <h5>
             {this.props.dropoff_sitename}, {this.props.zipcode}
           </h5>
