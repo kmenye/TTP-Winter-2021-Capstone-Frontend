@@ -4,33 +4,39 @@ import './Home.css';
 const Home = () => {
 
     return <div>
-        <center> <img className="homeBanner" src = " https://api.time.com/wp-content/uploads/2019/07/plastic-garbage.jpg" width="900" height="500"></img></center>
-    
+        <img className="homeBanner" src = "https://images.pexels.com/photos/2850444/pexels-photo-2850444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" height="1000px" width="1920px"></img>
+        
     
     <br></br>
     <hr></hr>
     <br></br>
-    <center> <img src = "https://cdn.akamai.steamstatic.com/steam/apps/382310/capsule_616x353.jpg?t=1611504679 "></img></center>
+    
+    <center> <img src = "https://images.pexels.com/photos/814499/pexels-photo-814499.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" height="900px" width="1600px"></img></center>
     <br></br>
     <hr></hr>
     <br></br>
     <center>
         <div class="row">
             <div class="column">
-                <p> Column, should add description and link to search </p>
+                
+                <img src = "https://images.pexels.com/photos/5503336/pexels-photo-5503336.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" height="1000px" width="700px"></img>
                 </div>
             <div class="column">
-                <p> Column, should add description and link to search </p>
+                
+                <img src = "https://images.pexels.com/photos/4210866/pexels-photo-4210866.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" height="1000px" width="700px"></img>
                 </div>
             <div class="column">
-                <p> Column, should add description and link to search </p>
+                
+                <img src = "https://images.pexels.com/photos/3683041/pexels-photo-3683041.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" height="1000px" width="700px"></img>
                 </div>
         </div>
     </center>
     <hr></hr>
     <br></br>
     <br></br>
-    <h1> FAQ: </h1>
+    <center> <h1> FAQ: </h1> </center>
+    <hr></hr>
+    
     </div>
 
     

@@ -14,8 +14,6 @@ class RoutesContainer extends Component {
         <Route exact path= "/">
           <Navbarr />
           <Home />
-          <ZipSearch />
-      
         </Route>
 
         <Route exact path = "/electronics">   <Navbarr />  <Electronics /> </Route>
