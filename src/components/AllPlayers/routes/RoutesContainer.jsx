@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Switch } from "react-router-dom";
 import Home from "../../Pages/Home/Home.jsx";
-import ZipSearch from "../../ZipSearch/ZipSearch.jsx";
 import Navbarr from "../../Navbar/Navbar.jsx";
 import Electronics from "../../Pages/Electronics/Electronics.jsx";
 import Textiles from "../../Pages/Textiles/Textiles.jsx";

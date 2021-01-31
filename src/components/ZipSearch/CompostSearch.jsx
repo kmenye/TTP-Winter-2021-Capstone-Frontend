@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import axios from "axios";
-import ZipInfo from "./ZipInfo";
-import './PharmaSearch.css';
+import CompostInfo from "./CompostInfo";
+import './CompostSearch.css';
 
-class PharmaSearch extends Component {
+class CompostSearch extends Component {
   constructor(props) {
     super(props);
 
@@ -27,10 +27,12 @@ class PharmaSearch extends Component {
     });
   };
 
-
   fetchZipCode() {
-
-axios.get(`https://data.cityofnewyork.us/resource/edk2-vkjh.json?zipcode=${this.state.code}`)
+   
+      axios
+        .get(
+          `https://data.cityofnewyork.us/resource/if26-z6xq.json?zip_code=${this.state.code}`)
+          
         .then((result) => {
           if (result.data.length > 0) {
               console.log(result.data);
@@ -47,15 +49,13 @@ axios.get(`https://data.cityofnewyork.us/resource/edk2-vkjh.json?zipcode=${this.
         .catch((err) => {
           console.log(err);
         });
-    }
-  
+  }
   
 
   getType(event) {
     event.preventDefault();
     this.setState({ type: event.target.value });
   }
-
 
   doStuff() {
     {
@@ -67,10 +67,12 @@ axios.get(`https://data.cityofnewyork.us/resource/edk2-vkjh.json?zipcode=${this.
   render() {
     return (
       <div className="zipsearch">
-        <center>
-        {}
+        <center> 
+            <h1> Food Recycling Drop Offs </h1>
+        {/* Say what the search is for Big title letters*/}
         <br></br>
-        <h1> Pharmaceutical Drop Off Points</h1>
+
+        
         <input
           name="code"
           type="text"
@@ -80,21 +82,18 @@ axios.get(`https://data.cityofnewyork.us/resource/edk2-vkjh.json?zipcode=${this.
           value={this.state.code}
           placeholder="Please enter a zip code"
         />
-
         <button onClick={this.fetchZipCode}>Search</button>
 
         {this.state.match ? (
           <div>
             {this.state.zip.map((item, index) => (
-              <ZipInfo
+              <CompostInfo
                 key={index}
-                address={item.address}
-                dropoff_sitename={
-                  item.dropoff_sitename ||
-                  item.vendor_name ||
-                  item.drop_off_site_name
+                location={item.location}
+                food_scrap_drop_off_site={
+                  item.food_scrap_drop_off_site
                 }
-                zipcode={item.zipcode}
+                zip_code={item.zip_code}
                 latitude={item.latitude}
                 longitude={item.longitude}
               />
@@ -109,6 +108,5 @@ axios.get(`https://data.cityofnewyork.us/resource/edk2-vkjh.json?zipcode=${this.
     );
   }
 }
-export default PharmaSearch;
-
+export default CompostSearch;
 

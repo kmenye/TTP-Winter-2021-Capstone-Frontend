@@ -1,12 +1,10 @@
 import React from "react";
-import ZipSearch from "../../ZipSearch/ZipSearch.jsx";
+import CompostSearch from "../../ZipSearch/CompostSearch.jsx";
 
 const Compost = () => {
     return (
         <div>
-            <center>
-            <ZipSearch />
-            </center>
+            <CompostSearch />
         </div>
     )
 }
