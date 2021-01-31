@@ -28,13 +28,13 @@ const Home = () => {
         <br></br><br></br><br></br><br></br>
         
         <div class="button1">
-             <button><Link to="/textiles"> Clothing</Link> </button>
+             <h1><Link to="/textiles" style = {{color:'white'}}> Clothing</Link> </h1>
         </div>
         <div class="button2">
-             <button><Link to="/compost"> Compost</Link> </button>
+             <h1><Link to="/compost" style = {{color:'white'}}> Compost</Link> </h1>
         </div>
         <div class="button3">
-             <button><Link to="/pharma"> Pharma</Link> </button>
+             <h1><Link to="/pharma" style = {{color:'white'}}> Pharma</Link> </h1>
          </div>
         </div>
    

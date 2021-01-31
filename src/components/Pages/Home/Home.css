@@ -43,22 +43,35 @@
 .button1 {
   position: absolute;
   top:2300px;
-  left:850px;
+  left:860px;
   color: black;
+  font-style: italic;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .button2{
   position: absolute;
   top:2300px;
-  left:190px;
-
+  left:210px;
+  font-style: italic;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .button3 {
   position: absolute;
   top:2300px;
-  left:1500px;
-
+  left:1510px;
+  font-style: italic;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .button1:hover{
