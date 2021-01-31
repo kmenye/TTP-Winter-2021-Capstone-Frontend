@@ -58,9 +58,18 @@ const Home = () => {
                 </div>
         </div>
 
-    
+        <br></br>
+        <br></br>
+
+    <center>
+        <img src = "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" height="800px" width="1400px"></img>
+    </center>
+
+    <div class="button4">
+             <h1><Link to="/electronics" style = {{color:'white'}}> Electronics </Link> </h1>
+        </div>
+
     <hr></hr>
-    <br></br>
     <br></br>
     <center> <h1> FAQ: </h1> </center>
     <hr></hr>
