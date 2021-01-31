@@ -71,8 +71,21 @@ const Home = () => {
 
     <hr></hr>
     <br></br>
+    
     <center> <h1> FAQ: </h1> </center>
-    <hr></hr>
+    <center><h2> Why Recycle?</h2></center>
+    
+    <br></br>
+        <center> <h3> Electronic equipment contain toxic compounds such as lead, mercury, cadmium, and brominated flame retardants.
+    These toxic compounds can leach into the soil and water supplies or contaminate our air, if electronics are sent to landfills or incinerated.
+    Discarded electronics, called e-waste, are the fastest growing waste stream in the U.S. By 2016 over 3 billion electronics will be scrapped or an average of about 400 million units a year1.</h3>
+         </center>
+    <br></br>
+    <center><h3> Medication can reach water in a number of ways. Shockingly, 40 percent of the nation’s water supply is permeated by pharmaceuticals through aquifers deep underground, according to an Associated Press investigation. </h3></center>
+   <br></br>
+    <center><h3> It takes a lot of energy to produce clothing; every item goes through a complex manufacturing process that uses an extraordinary amount of electricity and water. By recycling clothes when they are no longer wanted, you ensure that all that energy doesn’t simply go to waste.</h3></center>
+   <br></br>
+    <center><h3> For businesses and institutions, a compelling reason to compost is to save money by cutting back on landfill fees. In 2011, Middlebury College in Vermont saved $100,000 on landfill fees by composting 90% of food waste generated on campus. The 370 tons of food Middlebury composted translated into a savings of $270 per ton of waste.</h3></center>
     
 </div>
 

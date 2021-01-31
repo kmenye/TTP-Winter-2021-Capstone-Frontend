@@ -1,30 +1,53 @@
-import ReactSignupLoginComponent from 'react-signup-login-component';
- 
-const LoginPage = (props) => {
-    const signupWasClickedCallback = (data) => {
-      console.log(data);
-      alert('Signup callback, see log on the console to see the data.');
-    };
-    const loginWasClickedCallback = (data) => {
-      console.log(data);
-      alert('Login callback, see log on the console to see the data.');
-    };
-    const recoverPasswordWasClickedCallback = (data) => {
-      console.log(data);
-      alert('Recover password callback, see log on the console to see the data.');
-    };
+import React, { Component } from "react";
+import { postSingleUserThunk } from "../../../redux/reducers/index";
+
+class SignUp extends Component{
+
+  constructor( props ) {
+    super (props);
+    this.state={
+        userName:"",
+        password:"",
+    }
+  }
+
+  handleSubmit = () => {
+
+    console.log(this.state.userName);
+      let user = {
+        userName: this.state.userName,
+        password: this.state.password,
+      }
+      console.log(user);
+      this.props.postSingleUserThunk(user);
+  }
+
+  handleChange = e => {
+
+    this.setState({
+      [e.target.name]: e.target.value
+    })
+  }
+
+render() {
     return (
         <div>
           <center>
-            <ReactSignupLoginComponent
-                title="Garbo Inc"
-                handleSignup={signupWasClickedCallback}
-                handleLogin={loginWasClickedCallback}
-                handleRecoverPassword={recoverPasswordWasClickedCallback}
-            />
+          <form>
+            <label>
+              UserName
+              <input type="text"  placeholder={"Put Username Here"}
+              name="UserName" onChange={ e=> this.handleChange(e)}></input>
+              <br></br>
+              <input type="text" placeholder={"Put Password Here"}
+              name="Password" onChange={ e=> this.handleChange(e)}></input>
+            </label>
+          </form>
+          <button onClick = {this.handleSubmit}> Sign Up </button>
             </center>
         </div>
     );
-};
- 
-export default LoginPage;
+  };
+}
+
+export default SignUp;

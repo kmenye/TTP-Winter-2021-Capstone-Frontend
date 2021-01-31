@@ -1,1 +1,1 @@
-export const GOT_ALL_TEXTILE_ZIP = "GOT_ALL_TEXTILE_ZIP";
+export const GOT_SINGLE_USER = "GOT_SINGLE_USER";
