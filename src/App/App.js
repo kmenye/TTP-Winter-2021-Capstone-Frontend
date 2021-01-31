@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import RoutesContainer from '../components/AllPlayers/routes/RoutesContainer';
+import RoutesContainer from '../components/routes/RoutesContainer';
 import Home from '../components/Pages/Home/Home.jsx';
 
 class App extends Component {

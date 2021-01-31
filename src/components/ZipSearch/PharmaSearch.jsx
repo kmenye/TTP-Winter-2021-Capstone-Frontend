@@ -8,11 +8,8 @@ class PharmaSearch extends Component {
     super(props);
 
     this.state = {
-      zip: [],
-      code: "",
+      zip: [], 
       match: false,
-      type: "electronics",
-
     };
 
     this.fetchZipCode = this.fetchZipCode.bind(this);
@@ -69,7 +66,7 @@ axios.get(`https://data.cityofnewyork.us/resource/edk2-vkjh.json?zipcode=${this.
       <div className="zipsearch">
         <center>
         {}
-        <br></br>
+     
         <h1> Pharmaceutical Drop Off Points</h1>
         <input
           name="code"

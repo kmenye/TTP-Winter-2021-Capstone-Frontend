@@ -8,10 +8,8 @@ class TextileSearch extends Component {
     super(props);
 
     this.state = {
-      zip: [],
-      code: "",
-      match: false,
-      type: "electronics",
+      zipDataT: [],
+      match: true,
     };
 
 
@@ -34,7 +32,7 @@ class TextileSearch extends Component {
         .then((result) => {
           if (result.data.length > 0) {
             this.setState({
-              zip: result.data,
+              zipDataT: result.data,
               match: true,
             });
           } else {
@@ -67,7 +65,7 @@ class TextileSearch extends Component {
     return (
       <div className="zipsearch">
         <center>
-        {/* Say what the search is for Big title letters*/}
+        {<h1> Clothing Drop Off Sites</h1>}
         <br></br>
         
         <input
@@ -83,7 +81,7 @@ class TextileSearch extends Component {
 
         {this.state.match ? (
           <div>
-            {this.state.zip.map((item, index) => (
+            {this.state.zipDataT.map((item, index) => (
               <ZipInfo
                 key={index}
                 address={item.address}

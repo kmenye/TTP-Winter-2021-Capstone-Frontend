@@ -1,4 +1,17 @@
 .nav-item{
-    margin-left: 50px;
-    margin-right:50px;
+    margin-left: 100px;
+    margin-right:100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: larger;
+
+}
+
+.navbar-brand{
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Link {
+    color: black;
 }

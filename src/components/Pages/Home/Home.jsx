@@ -10,8 +10,10 @@ const Home = () => {
         <div class="containerC">
 
         <img src = "https://images.pexels.com/photos/2850444/pexels-photo-2850444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" height="1080px" width="1920px"></img>
+
+      
         <div class="text-block1">
-            <h1>Keep Your Neighborhood Clean </h1>
+          <h1>Keep Your Neighborhood Clean</h1>   
         </div>
        
 
@@ -21,7 +23,7 @@ const Home = () => {
             <h1>Find Where To Recycle Here</h1>
         </div>
 
-        <img src = "https://images.pexels.com/photos/814499/pexels-photo-814499.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" height="900px" width="1600px"></img>
+        <img src = "https://images.unsplash.com/photo-1444464666168-49d633b86797?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1349&q=80" height="900px" width="1600px"></img>
 
         <br></br><br></br><br></br><br></br>
         

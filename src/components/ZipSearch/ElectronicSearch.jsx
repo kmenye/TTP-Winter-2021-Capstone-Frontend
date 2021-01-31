@@ -8,34 +8,14 @@ class ElectronicSearch extends Component {
     super(props);
 
     this.state = {
-      zip: [],
-      code: "",
-      match: false,
-      type: "electronics",
-
+      zipDataE: [],
     };
 
-    // changed initial type to electronics as it is the first item on the list
-    // this stops a bug where if you hit submit right away it
-    // does nothing
-    // maybe also make for zip?
-    // having a value would remove the place holder though
-
-    // change the name of the api call
-
-    // jsx is only for the return statement
-
-    //this.componentDidMount = this.componentDidMount.bind(this);
     this.fetchZipCode = this.fetchZipCode.bind(this);
     this.getType = this.getType.bind(this);
     this.doStuff = this.doStuff.bind(this);
   }
 
-  //GOOGLE MAPS API
-  //AIzaSyBUeZg5hbGAsMMEX-3UCAjZP91oooJoGkI
-    
-
-  // maybe do not need to bind do stuff?
 
   setZip = (event) => {
     this.setState({
@@ -43,13 +23,6 @@ class ElectronicSearch extends Component {
     });
   };
 
-  // componentDidMount(){
-  //     this.fetchZipCode();
-  // }
-
-  // need an if statement for which api account
-
-  // can use if else
 
   fetchZipCode() {
    
