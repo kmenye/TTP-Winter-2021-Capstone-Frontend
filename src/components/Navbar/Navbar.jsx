@@ -27,7 +27,7 @@ const Navbarr = () => {
             <Link to="/pharma">Pharma</Link>          
           </li>
           <li class="nav-item"> 
-            <Link to="/signup">Login</Link>          
+            <Link to="/userpage">User</Link>          
           </li>
         </ul>
       </div>
