@@ -1,10 +1,10 @@
 import React from "react";
-import ZipSearch from "../../ZipSearch/ZipSearch.jsx";
+import TextileSearch from "../../ZipSearch/TextileSearch.jsx";
 
 const Textiles = () => {
     return (
         <div>
-            <ZipSearch />
+            <TextileSearch />
         </div>
     )
 }

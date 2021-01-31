@@ -15,12 +15,14 @@ const LoginPage = (props) => {
     };
     return (
         <div>
+          <center>
             <ReactSignupLoginComponent
-                title="My awesome company"
+                title="Garbo Inc"
                 handleSignup={signupWasClickedCallback}
                 handleLogin={loginWasClickedCallback}
                 handleRecoverPassword={recoverPasswordWasClickedCallback}
             />
+            </center>
         </div>
     );
 };

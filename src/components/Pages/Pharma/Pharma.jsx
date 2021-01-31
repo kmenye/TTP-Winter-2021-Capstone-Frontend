@@ -1,10 +1,11 @@
 import React from "react";
-import ZipSearch from "../../ZipSearch/ZipSearch.jsx";
+import PharmaSearch from "../../ZipSearch/PharmaSearch.jsx";
+
 
 const Pharma = () => {
     return (
         <div>
-            <ZipSearch />
+            <PharmaSearch />
         </div>
     )
 }
