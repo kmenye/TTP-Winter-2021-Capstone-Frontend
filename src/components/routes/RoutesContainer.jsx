@@ -7,6 +7,7 @@ import Textiles from "../Pages/Textiles/Textiles.jsx";
 import Pharma from "../Pages/Pharma/Pharma.jsx";
 import Compost from "../Pages/Compost/Compost.jsx";
 import SignUp from "../Pages/Signup/LoginPage.jsx";
+import { Login, Signup, AllBooksContainer} from "../containers";
 
 class RoutesContainer extends Component {
   render() {
@@ -23,7 +24,10 @@ class RoutesContainer extends Component {
         <Route exact path = "/pharma">   <Navbarr />  <Pharma /> </Route>
         <Route exact path = "/userlogin">   <Navbarr />   </Route>
         <Route exact path = "/userpage">   <Navbarr />  </Route>
-        <Route exact path = "/signup"> <Navbarr /> <SignUp /> </Route>
+        <Route exact path="/login" component={Login} />
+        <Route exact path="/signup" component={Signup} />
+        <Route exact path = "/books" component={AllBooksContainer} />
+       
 
       </Switch>
     );

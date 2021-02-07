@@ -27,7 +27,10 @@ const Navbarr = () => {
             <Link to="/pharma" style = {{color:'black'}}>Pharma</Link>          
           </li>
           <li class="nav-item"> 
-            <Link to="/signup" style = {{color:'black'}}>Login</Link>          
+            <Link to="/login" style = {{color:'black'}}>Login</Link>          
+          </li>
+          <li class="nav-item"> 
+            <Link to="/signup" style = {{color:'black'}}>SignUp</Link>          
           </li>
         </ul>
       </div>
