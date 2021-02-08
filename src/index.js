@@ -5,7 +5,7 @@ import './index.css';
 
 //Redux
 import { Provider } from 'react-redux';
-import store from './redux/store';
+import store from './store/index';
 
 // React-Router
 import { BrowserRouter } from 'react-router-dom';

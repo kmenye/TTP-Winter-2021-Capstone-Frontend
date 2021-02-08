@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { postSingleUserThunk } from "../../../redux/reducers/index";
 
 class SignUp extends Component{
 
